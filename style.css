@@ -19,8 +19,11 @@ html, body {
 body {
   background: linear-gradient(to top, #212633, #7E8998);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed; /* isso evita o "scroll efeito fundo" */
+  background-size: cover;       /* cobre toda a tela */
+  min-height: 100vh;            /* garante altura mínima da viewport */
 }
+
 
 #photo-profile {
   display: flex;
@@ -77,7 +80,7 @@ body {
   text-align: center;
 }
 
-a {
+a, li {
   text-decoration: none;
   color: white;
 }
